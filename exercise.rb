@@ -31,4 +31,4 @@ commits.each do |commit|
   end
 end
 
-puts score
+puts "DHH's github score is " + score.to_s
