@@ -14,14 +14,14 @@ discounted_price = 0
 
 cart.each do |food|
   case food
-  when "milk"
-    milk += 1
-  when "bread"
-    bread += 1
-  when "banana"
-    banana += 1
-  when "apple"
-    apple += 1
+    when "milk"
+      milk += 1
+    when "bread"
+      bread += 1
+    when "banana"
+      banana += 1
+    when "apple"
+      apple += 1
   end
 end
 
@@ -44,5 +44,5 @@ discounted_price += apple * 0.89
 price = price.round(2)
 discounted_price = discounted_price.round(2)
 
-puts ("Total price : $" + discounted_price.to_s)
+puts ("Total price: $" + discounted_price.to_s)
 puts ("You saved $" + (price - discounted_price).to_s + " today.")
